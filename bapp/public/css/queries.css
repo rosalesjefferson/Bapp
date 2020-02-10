@@ -1,0 +1,139 @@
+
+/* 1200px largest */
+@media only screen and (max-width: 75em){
+    .container{
+        margin: 0;
+    }
+}
+
+/* 1100px large*/
+@media only screen and (max-width: 68.75em){
+    html{
+        font-size: 50%;
+    }
+    .container{
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+/* 900px medium */
+@media only screen and (max-width: 56.25em){
+    .content{
+        flex-direction: column;
+    }
+
+    /* sidebar */
+    .sidebar .side-nav{
+        display: flex;
+
+        margin: 0;
+    }
+    .sidebar .side-nav .side-nav__item{
+        flex: 1;
+    }
+    .sidebar .side-nav .side-nav__item .side-nav__link:link,
+    .sidebar .side-nav .side-nav__item .side-nav__link:visited{
+        padding: 2rem;
+        justify-content: center;
+    }
+    .sidebar .side-nav .side-nav__item:not(:last-child){
+        margin-bottom: 0;
+    }
+    .legal{
+       display: none;
+    }
+
+    .user-reviews .review{
+        padding: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    /* DETAIL */
+    .content .hotel-view .detail{
+        padding: 3rem;
+    }
+    
+    .content .hotel-view .detail .description{
+        margin-right: 3rem;
+        padding: 2rem;
+    }
+    
+    
+
+    /****************************/
+    /*BOTTOM BUTTON*/
+    /****************************/
+    /* heading */
+    .cta{
+        padding: 2.5rem 0;
+    }
+
+}
+
+/* 665px small */
+@media only screen and (max-width: 42em){
+    .content .hotel-view .detail{
+        flex-direction: column;
+    }
+    
+    .content .hotel-view .detail .description{
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
+
+    
+    .sidebar .side-nav .side-nav__item .side-nav__link:link,
+    .sidebar .side-nav .side-nav__item .side-nav__link:visited{
+        /* display: flex; */
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sidebar .side-nav .side-nav__item .side-nav__link .side-nav__icon{
+        margin-right: 0;
+        margin-bottom: .7rem;
+    }
+
+            /********************************************/
+        /* OVERVIEW */
+        /********************************************/
+        /* heading */
+        .overview .overview__heading{
+            font-size: 1.8rem;
+            padding: 1.25rem 2rem;
+        }
+        /* ratings */
+        .overview__rating{
+            padding: 0 1.5rem;
+        }
+
+        .overview__rating-average{
+            font-size: 1.8rem;
+
+        }
+
+        .overview__rating-count{
+            font-size: .5rem;
+        }
+}
+
+@media only screen and (max-width: 31.25em){
+    .header{
+        flex-wrap: wrap; 
+        height: 12rem; 
+        align-content: space-around;  
+    }
+
+/********************************************/
+/* header search */
+/********************************************/
+    .header .search{
+        order: 1;
+        flex: 0 0 100%;
+        margin-top: -3rem;
+        background: var(--color-grey-light-2);
+
+    }
+
+}
